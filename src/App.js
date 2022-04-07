@@ -16,6 +16,7 @@ import ManageProductsScreen from './Screens/ManageProductsScreen';
 import EditProductScreen from './Screens/EditProductScreen';
 import RegisterScreen from './Screens/RegisterScreen';
 import LoginScreen from './Screens/LoginScreen';
+import BasketScreen from './Screens/BasketScreen';
 //import routing for page navigation
 import {
   BrowserRouter as Router,
@@ -41,6 +42,7 @@ function App() {
             <Route exact path = "/admin/addproduct" element={<AddProductScreen/>}/>
             <Route exact path = "/admin/manageproducts" element={<ManageProductsScreen/>}/>
             <Route exact path = "/admin/product/edit/:id" element={<EditProductScreen/>}/>
+            <Route exact path = "/basket" element={<BasketScreen/>}/>
           </Routes>
      
       </Router>

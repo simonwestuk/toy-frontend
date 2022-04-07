@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap'
+import {Nav} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 function Cart() {
 
@@ -17,7 +18,7 @@ function Cart() {
 
     return (
         <>
-        <Button variant="primary" className="m-2">Basket <b>{ count }</b></Button>
+        <Nav.Link as={Link} to="/basket">Basket <b>{ count }</b></Nav.Link>
         </>
     )
 }

@@ -15,7 +15,7 @@ function Header() {
       <Nav.Link as={Link} to="/locations">Locations</Nav.Link>
       <Nav.Link as={Link} to="/about">About Us</Nav.Link>
       <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-
+      <Cart />
 
       <Dropdown>
         <Dropdown.Toggle className="mx-4" variant="success" id="dropdown-basic">
@@ -29,7 +29,7 @@ function Header() {
       </Dropdown>
 
 
-      <Cart />
+      
     </Nav>
     </Container>
   </Navbar>
